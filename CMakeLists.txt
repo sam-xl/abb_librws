@@ -11,6 +11,9 @@ endif()
 # package's version.
 project(abb_librws VERSION ${CMAKE_MATCH_1} LANGUAGES CXX)
 
+find_package(ament_cmake REQUIRED)
+ament_package()
+
 include(GNUInstallDirs)
 
 list(INSERT CMAKE_MODULE_PATH 0 "${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules/third_party")
